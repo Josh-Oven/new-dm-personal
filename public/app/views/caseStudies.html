@@ -1,0 +1,253 @@
+<script>
+$(".bottom-blog-slant").click(function () {
+$('.slider').show("slide", { direction: "left" }, 1000);
+});
+
+</script>
+
+<section class='top-caseStudies-hero'>
+
+  <div class='hero-inner-container'>
+
+    <div class='hero-header'>
+
+      <a ui-sref='home'><img class='header-logo' src='./assets/images/primary.jpg' /></a>
+
+      <ul class='nav-bar'>
+
+        <li><a class='nav-link' ui-sref='case-studies'>Case Studies</a></li>
+        <li><a class='nav-link' ui-sref='about'>About</a></li>
+        <li><a class='nav-link' ui-sref='process'>Process</a></li>
+        <li><a class='nav-link' ui-sref='services'>Services</a></li>
+        <li><a class='nav-link' ui-sref='blog'>Blog</a></li>
+        <li><a class='nav-link' ui-sref='careers'>Careers</a></li>
+        <li><a class='nav-link contact-link' ui-sref='contact'>Contact</a></li>
+
+      </ul>
+
+    </div>
+
+    <div class='hero-contents'>
+
+      <h3 class='hero-title'>Case Studies</h3>
+
+      <p class='hero-text'>We know it can be a big deal choosing an agency to trust your brand with, so why choose VIA? Well, simply put we have a canny knack for creating extraordinary results for the clients we work for. Throw in a little bit of fun and together we'll bring out the best in your brand.
+
+      </p>
+
+      <p class='hero-text'>We are dedicated, passionate and like to invest ourselves in each and every project. We also drink copious amounts of tea and coffee! Join us for one and let’s discuss how we solve problems with vision, clarity, simplicity and honesty to get the best possible outcome for your business.
+
+      </p>
+
+      <p class='hero-text'>Take a look through some of our case studies to see how we’ve helped others.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<main>
+
+
+<section class='main-section case-studies-thumb-section'>
+
+  <div class='inner-section-container'>
+
+    <div class='case-studies-container'>
+
+      <div class='case-study-shell' ng-repeat='data in caseData'>
+
+        <img ng-src='{{data.case.image}}'
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class='main-section contact-section case-contact contact-footer-section'>
+
+  <div class='contact-section-container'>
+
+    <h2 class='section-title' style='margin-left: 80px;'>Want to work together?</h2>
+
+    <h3 class='section-text'> you have a potential project that we could help you with, please fill out the form below with the information and we'll get back to you.</h3>
+
+  <div class='contact-input-container'>
+
+    <p class='input-text'>
+
+      My name is <input type="text" placeholder="full name">
+
+      and I'm from <input type='text' placeholder='company/organisation'>
+
+      <br>
+
+      I need
+      <select>
+          <option selected disabled>(please select)</option>
+          <option value="website">a new website</option>
+          <option value="branding">new branding</option>
+          <option value="design">new graphic design</option>
+          <option value="marketing">help with marketing</option>
+          <option value="print">a print quote</option>
+          <option value="app">a mobile app</option>
+          <option value="software">software development</option>
+          <option value="socialmedia">social media marketing</option>
+      </select>
+
+      Please email me back at <input type='text' placeholder='email address'>
+
+      <br>
+
+      Or call me on <input type='text' placeholder='phone number'>
+
+      Thanks!
+
+    </p>
+
+  </div>
+
+</div>
+
+</section>
+
+
+
+<div class='slant-div bottom-blog-slant'>
+<div class='slider'></div>
+</div>
+
+</main>
+
+<section class='main-section footer-section'>
+
+  <div class='inner-section-container footer-container'>
+
+    <div class='footer-contact-info'>
+
+      <div class='footer-phone-numbers'>
+
+        <h2 class='section-subtitle'>Contact Info</h2>
+
+        <div class='phone-number-container'>
+
+          <div class='phone-icon'>
+
+            <i class="fa fa-phone" aria-hidden="true"></i>
+
+          </div>
+
+          <div class='phone-text-container'>
+
+            <h3 class='location-name'>Middlesbrough</h3>
+
+            <h3 class='phone-number'>01642 247 111</h3>
+
+          </div>
+
+        </div>
+
+        <div class='phone-number-container'>
+
+          <div class='phone-icon'>
+
+            <i class="fa fa-phone" aria-hidden="true"></i>
+
+          </div>
+
+        <div class='phone-text-container'>
+
+          <h3 class='location-name'>Hull</h3>
+
+          <h3 class='phone-number'>01482 242 243</h3>
+
+        </div>
+
+        </div>
+
+      </div>
+
+      <div class='footer-contact-info-email'>
+
+        <h3 class='section-subtitle footer-email'>studio@viacreative.co.uk</h3>
+
+        <a class='contact-link' ui-sref=''>CONTACT</a>
+
+      </div>
+
+    </div>
+
+    <div class='footer-social-media'>
+
+      <h2 class='section-subtitle'>Social Media</h2>
+
+      <div class='footer-icon-container'>
+
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+
+        <i class="fa fa-dribbble" aria-hidden="true"></i>
+
+        <i class="fa fa-behance" aria-hidden="true"></i>
+
+        <i class="fa fa-github" aria-hidden="true"></i>
+
+      </div>
+
+    </div>
+
+    <div class='footer-address-info'>
+
+      <h2 class='section-subtitle'>Address</h2>
+
+      <div class='footer-address'>
+
+        <p class='section-text'>Cargo Fleet Offices</p>
+
+        <p class='section-text'>Middlesbrough Road</p>
+
+        <p class='section-text'>Middlesbrough</p>
+
+        <p class='section-text'>TS6 6XH</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class='legal-footer'>
+
+    <div class='bottom-left'>
+
+      <img src='./assets/images/footer/via-logo-footer.png' />
+
+      <a ui-sref=''>Terms & Conditions</a>
+
+      <a ui-sref=''>Privacy</a>
+
+      <a ui-sref=''>Cookies</a>
+
+    </div>
+
+    <div class='center-arrow'>
+
+    </div>
+
+    <div class='october-partner'>
+
+      <img src='./assets/images/footer/october.png' />
+
+    </div>
+
+  </div>
+
+</section>

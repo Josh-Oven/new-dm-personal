@@ -1,0 +1,195 @@
+<section class='top-blogItem-hero'>
+
+  <div class='hero-inner-container'>
+
+    <div class='hero-header'>
+
+      <a ui-sref='home'><img class='header-logo' src='./assets/images/via-grey-logo.jpg' /></a>
+
+      <ul class='nav-bar'>
+
+        <li><a class='nav-link' ui-sref='case-studies'>Case Studies</a></li>
+        <li><a class='nav-link' ui-sref='about'>About</a></li>
+        <li><a class='nav-link' ui-sref='process'>Process</a></li>
+        <li><a class='nav-link' ui-sref='services'>Services</a></li>
+        <li><a class='nav-link' ui-sref='blog'>Blog</a></li>
+        <li><a class='nav-link' ui-sref='careers'>Careers</a></li>
+        <li><a class='nav-link contact-link' ui-sref='contact'>Contact</a></li>
+
+      </ul>
+
+    </div>
+
+    <div class='hero-contents' ng-repeat='data in singleBlogItem'>
+
+      <h1 class='hero-title'>{{data.blogtitle}}</h1>
+
+      <h3 class='hero-subtitle'>{{data.blogauthor}}</h3>
+
+    </div>
+
+  </div>
+
+</section>
+
+<div class='slant-div blog-item-slant'></div>
+
+<section class='blog-text-section'>
+
+  <div class='large-image-container' ng-repeat='data in singleBlogItem'>
+
+    <img ng-src='{{data.blogImageLarge}}' />
+
+  </div>
+
+  <div class='inner-section-container' ng-repeat='data in singleBlogItem'>
+
+    <p class='section-text'>A quick search on Google will quickly highlight the benefits of listening to music whilst working.  Increased efficiency, happier staff and heightened creativity, are just some of the benefits that are a regular theme in the online articles.  It still astounds me in the modern era we live in most staff are not allowed to listen to music in their workplace!</p>
+
+<p class='section-text'>This is not the case here at Via Towers; you will find a variety of music pumping out out of our speakers throughout the day.   Whether it’s any better than the sound of the printers whirling or the clicking of mice is debatable.  One of the perks of working at your studio (well I see it as a perk) is the music rota. This is the rota that gives you a day to control the playlist, your day to uplift, chill out, inspire, shock and rock the team or simply get shot down and told to turn that sh*t off!</p>
+
+<p class='section-text'>For me, music and design go hand in hand. The way Musicians work is not that far from that of our creative team. Both of them start from nothing but the generation of a simple idea and end up creating pieces of work distinctive to themselves or ethos of our studio. Much like the music written by a band, VIA Creative has its own unique brand voice and design style that evolves and changes with the personality of the team members and current trends but the core and quality of the work is still the same here after 14 years of trading. This is illustrated perfectly by comparison to the evolution of Coldplay’s music. Their newest piece of work, A Head Full of Dreams is vastly different from their debut album Parachutes, but it is instantly distinguishable as Coldplay.</p>
+
+<p class='section-text'>Creative design and music have a long standing relationship, just look at the iconic album designs that we can all love and instantly recognise.  Lots of artists are heavily involved in the process of creating these iconic images.  (A few of my personal favourites are below)  Some of the VIA creative team are also involved in music, Ray presented a radio show on Leeds Indie Radio showcasing a diverse range of genre bending electronic music, young Terry our lead dev is a talented musician filling his weekend playing in a brass band and our founder and chief of staff Dave says he was a house DJ back in the day but none of the team are old enough to back up his claims!  Me? I’m just a steering wheel drummer.</p>
+
+<p class='section-text'>My preference of music for my daily work tasks would be something along the lines of Radio 6, The Saturday night show, Electric Lady Lounge podcast which is a mix of chilled house and electronica. This is not a reflection of my regular music taste outside the office walls, but I find it is what really helps get my brain in check and focused allowing me to get the mundane jobs done with a smile on my face and a skip in my step. </p>
+
+<p class='section-text'>A little further reading shows that lyrics can also be distracting. Research shows that “intelligible” chatter—talking that can be clearly heard and understood and this is what makes for a distracting environment I think I am inclined to agree based on my own experience. </p>
+
+<p class='section-text'>In conclusion music is as important as the Mac’s and other tools that we use daily at work. The environment you create impacts the behaviour you get. When deciding what sounds will fill your workday, get deliberate: test and tweak until you find the perfect harmony. The ability to do consistently great work is what’s at stake, so think before you press play.</p>
+
+<p class='section-text'>You can check out my playlist or any of the teams thinking about it, simply click on meet the team and under each individual is a link to their individual spotify play list, pretty neat trick, huh?  Check out the tunes that power VIA’s creative minds.</p>
+
+  </div>
+
+</section>
+
+<div class='slant-div footer-slant'></div>
+
+<section class='main-section footer-section'>
+
+  <div class='inner-section-container footer-container'>
+
+    <div class='footer-contact-info'>
+
+      <div class='footer-phone-numbers'>
+
+        <h2 class='section-subtitle'>Contact Info</h2>
+
+        <div class='phone-number-container'>
+
+          <div class='phone-icon'>
+
+            <i class="fa fa-phone" aria-hidden="true"></i>
+
+          </div>
+
+          <div class='phone-text-container'>
+
+            <h3 class='location-name'>Middlesbrough</h3>
+
+            <h3 class='phone-number'>01642 247 111</h3>
+
+          </div>
+
+        </div>
+
+        <div class='phone-number-container'>
+
+          <div class='phone-icon'>
+
+            <i class="fa fa-phone" aria-hidden="true"></i>
+
+          </div>
+
+        <div class='phone-text-container'>
+
+          <h3 class='location-name'>Hull</h3>
+
+          <h3 class='phone-number'>01482 242 243</h3>
+
+        </div>
+
+        </div>
+
+      </div>
+
+      <div class='footer-contact-info-email'>
+
+        <h3 class='section-subtitle footer-email'>studio@viacreative.co.uk</h3>
+
+        <a class='contact-link' ui-sref=''>CONTACT</a>
+
+      </div>
+
+    </div>
+
+    <div class='footer-social-media'>
+
+      <h2 class='section-subtitle'>Social Media</h2>
+
+      <div class='footer-icon-container'>
+
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+
+        <i class="fa fa-dribbble" aria-hidden="true"></i>
+
+        <i class="fa fa-behance" aria-hidden="true"></i>
+
+        <i class="fa fa-github" aria-hidden="true"></i>
+
+      </div>
+
+    </div>
+
+    <div class='footer-address-info'>
+
+      <h2 class='section-subtitle'>Address</h2>
+
+      <div class='footer-address'>
+
+        <p class='section-text'>Cargo Fleet Offices</p>
+
+        <p class='section-text'>Middlesbrough Road</p>
+
+        <p class='section-text'>Middlesbrough</p>
+
+        <p class='section-text'>TS6 6XH</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class='legal-footer'>
+
+    <div class='bottom-left'>
+
+      <img src='./assets/images/footer/via-logo-footer.png' />
+
+      <a ui-sref=''>Terms & Conditions</a>
+
+      <a ui-sref=''>Privacy</a>
+
+      <a ui-sref=''>Cookies</a>
+
+    </div>
+
+    <div class='center-arrow'>
+
+    </div>
+
+    <div class='october-partner'>
+
+      <img src='./assets/images/footer/october.png' />
+
+    </div>
+
+  </div>
+
+</section>

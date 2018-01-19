@@ -1,0 +1,413 @@
+<section class='top-home-hero'>
+
+  <div class='hero-inner-container'>
+
+    <div class='hero-header'>
+
+      <a ui-sref='home'><img class='header-logo' src='./assets/images/via-grey-logo.jpg' /></a>
+
+      <ul class='nav-bar'>
+
+        <li><a class='nav-link' ui-sref='case-studies'>Case Studies</a></li>
+        <li><a class='nav-link' ui-sref='about'>About</a></li>
+        <li><a class='nav-link' ui-sref='process'>Process</a></li>
+        <li><a class='nav-link' ui-sref='services'>Services</a></li>
+        <li><a class='nav-link' ui-sref='blog'>Blog</a></li>
+        <li><a class='nav-link' ui-sref='careers'>Careers</a></li>
+        <li><a class='nav-link contact-link' ui-sref='contact'>Contact</a></li>
+
+      </ul>
+
+    </div>
+
+    <div class='hero-contents'>
+
+      <h3 class='hero-subtitle'>Hello, We are VIA.</h3>
+
+      <h1 class='hero-title'>Crafting inspiring brands and engaging websites since 2003</h1>
+
+      <p class='hero-text'>Born from design, fed by creativity — VIA are an agency that delivers engaging brand ideas and digital solutions that will transform your business. From our studio in Middlesbrough, we work with clients ranging from start ups to multi nationals from all over the UK and Europe.</p>
+
+      <div class='hero-button case-studies-button'><a ui-sref=''>CASE STUDIES</a></div>
+
+      <div class='hero-button about-via-button'><a ui-sref=''>ABOUT VIA</a></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<main>
+
+
+  <div class='slant-div hero-slant'></div>
+
+  <section class='main-section info-section'>
+
+    <div class='section-container'>
+
+      <h2 class='section-title'>Our Specialties</h2>
+
+      <p class='section-text'>We provide engaging, provocative and enticing brand and digital solutions. We employ dedicated professionals inhouse, our skills are specific and fine-tuned. We are virtuosos, not generalists. We build brands and digital experiences to elevate and recharge your company message.</p>
+
+      <div class='media-grid'>
+
+        <div class='specialty-icon branding'>
+
+          <img src='./assets/images/icons/branding-icon.png' />
+
+          <a class=specialty-link>Branding</a>
+
+        </div>
+
+        <div class='specialty-icon web'>
+
+          <img src='./assets/images/icons/web-icon.png' />
+
+          <a class='specialty-link'>Web & Digital</a>
+
+        </div>
+
+        <div class='specialty-icon design'>
+
+          <img src='./assets/images/icons/design-icon.png' />
+
+          <a ui-sref='imgur.com' class=specialty-link>Design</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class='main-section case-studies-section'>
+
+    <h2 class='section-title'>Latest Case Studies</h2>
+
+    <p class='section-text'>View our specific brand, design, web & digital case studies.</p>
+
+    <div class='case-study-container'>
+
+      <div class='case-study-preview' ng-repeat='data in caseData | limitTo : 2'>
+
+
+
+        <img class='case-study-image boxSlider' ng-src='{{data.case.image}}' />
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class='main-section story-section'>
+
+    <div class='story-container'>
+
+      <div class='home-video-player'>
+
+        <h1 class='video-player-placeholder'>VIDEO PLAYER GOES HERE</h1>
+
+      </div>
+
+      <div class='story-text-container'>
+
+        <h3 class='story-subtitle'>About Via</h3>
+
+        <h2 class='section-title'>Our Story</h2>
+
+        <p class='section-text'>VIA is a progressive design studio based in Middlesbrough, working with multiple brands to craft captivating customer experiences across a wide range of traditional and digital media platforms. We develop strong brands and grow businesses by bringing together branded services, digital experiences and engaging content.</p>
+
+        <a class='about-link' ui-sref=''>ABOUT VIA</a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class='reverse-slant contact-top-slant'></div>
+
+  <section class='main-section contact-section'>
+
+    <div class='contact-section-container'>
+
+      <h2 class='section-title' style='color: white'>Want to work together?</h2>
+
+      <h3 class='section-text'>Please tell us what you need and we'll get back to you soon.</h3>
+
+    <div class='contact-input-container'>
+
+      <p class='input-text'>
+
+        My name is <input type="text" placeholder="full name">
+
+        and I'm from <input type='text' placeholder='company/organisation'>
+
+        <br>
+
+        I need
+        <select>
+            <option selected disabled>(please select)</option>
+            <option value="website">a new website</option>
+            <option value="branding">new branding</option>
+            <option value="design">new graphic design</option>
+            <option value="marketing">help with marketing</option>
+            <option value="print">a print quote</option>
+            <option value="app">a mobile app</option>
+            <option value="software">software development</option>
+            <option value="socialmedia">social media marketing</option>
+        </select>
+
+        Please email me back at <input type='text' placeholder='email address'>
+
+        <br>
+
+        Or call me on <input type='text' placeholder='phone number'>
+
+        Thanks!
+
+      </p>
+
+    </div>
+
+    <a class='contact-form-button' href=''>LET'S GO</a>
+
+  </div>
+
+  </section>
+
+  <div class='reverse-slant contact-bottom-slant'></div>
+
+  <section class='main-section brochure-section'>
+
+    <div class='inner-section-container'>
+
+      <h2 class='section-title brochure-title'>Request our agency brochure</h2>
+
+    <div class='flex'>
+
+      <p class='section-text'>Fancy a FREE copy of our agency profile PDF brochure? Pop your email address down and we'll send you a copy straight away. It's full of examples of how we've helped other businesses develop their brand and examples of our engaging websites.</p>
+
+      <form class="" action="index.html" method="post">
+
+        <input class='form-input' placeholder='Email'>
+
+        <button class='send-email'>SEND ME A COPY</button>
+
+      </form>
+
+    </div>
+
+    </div>
+
+  </section>
+
+  <section class='main-section case-studies-row'>
+
+    <div class='inner-section-container row-container'>
+
+      <div class='case-study-column' ng-repeat='data in caseData | limitTo : 3'>
+
+        <img ng-src='{{data.case.image}}' />
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class='main section follow-us-section'>
+
+    <div class='inner-section-container follow-container'>
+
+      <h2 class='section-title'>Follow Us Online</h2>
+
+      <div class='logo-icon-container'>
+
+        <div class='icon-circle'><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+
+        <div class='icon-circle'><i class="fa fa-twitter" aria-hidden="true"></i></div>
+
+        <div class='icon-circle'><i class="fa fa-facebook" aria-hidden="true"></i></div>
+
+        <div class='icon-circle'><i class="fa fa-dribbble" aria-hidden="true"></i></div>
+
+        <div class='icon-circle'><i class="fa fa-behance" aria-hidden="true"></i></div>
+
+        <div class='icon-circle'><i class="fa fa-github" aria-hidden="true"></i></div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class='reverse-slant follow-slant'></div>
+
+  <section  class='main-section blog-section'>
+
+    <h3 class='section-subtitle'>VIA culture</h3>
+
+    <h2 class='section-title blog-section-title'>Latest Blog Posts<h2>
+
+    <div class='blog-row'>
+
+      <div class='blog-container' ng-repeat='data in blogData | limitTo: 2'>
+
+        <div class='blog-image-container'>
+
+          <img ng-src='{{data.blog.imageLarge}}'
+
+        </div>
+
+        <div class='blog-info-container'>
+
+          <h2 class='section-title'>{{data.blog.title}}</h2>
+
+          <h3 class='section-subtitle'>{{data.blog.author}}</h3>
+
+          <p class='section-text'>{{data.blog.teaserText}}</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class='slant-div bottom-blog-slant'></div>
+
+  <section class='main-section footer-section'>
+
+    <div class='inner-section-container footer-container'>
+
+      <div class='footer-contact-info'>
+
+        <div class='footer-phone-numbers'>
+
+          <h2 class='section-subtitle'>Contact Info</h2>
+
+          <div class='phone-number-container'>
+
+            <div class='phone-icon'>
+
+              <i class="fa fa-phone" aria-hidden="true"></i>
+
+            </div>
+
+            <div class='phone-text-container'>
+
+              <h3 class='location-name'>Middlesbrough</h3>
+
+              <h3 class='phone-number'>01642 247 111</h3>
+
+            </div>
+
+          </div>
+
+          <div class='phone-number-container'>
+
+            <div class='phone-icon'>
+
+              <i class="fa fa-phone" aria-hidden="true"></i>
+
+            </div>
+
+          <div class='phone-text-container'>
+
+            <h3 class='location-name'>Hull</h3>
+
+            <h3 class='phone-number'>01482 242 243</h3>
+
+          </div>
+
+          </div>
+
+        </div>
+
+        <div class='footer-contact-info-email'>
+
+          <h3 class='section-subtitle footer-email'>studio@viacreative.co.uk</h3>
+
+          <a class='contact-link' ui-sref=''>CONTACT</a>
+
+        </div>
+
+      </div>
+
+      <div class='footer-social-media'>
+
+        <h2 class='section-subtitle'>Social Media</h2>
+
+        <div class='footer-icon-container'>
+
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+
+          <i class="fa fa-dribbble" aria-hidden="true"></i>
+
+          <i class="fa fa-behance" aria-hidden="true"></i>
+
+          <i class="fa fa-github" aria-hidden="true"></i>
+
+        </div>
+
+      </div>
+
+      <div class='footer-address-info'>
+
+        <h2 class='section-subtitle'>Address</h2>
+
+        <div class='footer-address'>
+
+          <p class='section-text'>Cargo Fleet Offices</p>
+
+          <p class='section-text'>Middlesbrough Road</p>
+
+          <p class='section-text'>Middlesbrough</p>
+
+          <p class='section-text'>TS6 6XH</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class='legal-footer'>
+
+      <div class='bottom-left'>
+
+        <img src='./assets/images/footer/via-logo-footer.png' />
+
+        <a ui-sref=''>Terms & Conditions</a>
+
+        <a ui-sref=''>Privacy</a>
+
+        <a ui-sref=''>Cookies</a>
+
+      </div>
+
+      <div class='center-arrow'>
+
+      </div>
+
+      <div class='october-partner'>
+
+        <img src='./assets/images/footer/october.png' />
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>

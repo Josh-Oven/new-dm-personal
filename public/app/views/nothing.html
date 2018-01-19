@@ -1,0 +1,18 @@
+<p>Terminology
+The first thing you need to know in order to understand how a web request works are the following definitions: </p> <ul> <li><p>Web server - the software on a server that allows it to receive and process incoming web requests</p></li> <li><p>DNS - short for domain name system, which is basically just a phone book that maps domain names IP addresses (we"ll get into this later)
+</p></li> <li><p>Response code - numbers that identify different types of HTTP responses (commonly known ones are 200 for OK, 404 for Not Found, 301 for Permanent Redirect, and 500 for Internal Server Error)*</p></li> </ul><p>Step 1: DNS Lookup
+In reality, all web addresses are actually just strings of numbers called IP addresses that look something like this: 216.58.198.174. In fact, if you paste that address into your browser, you"ll notice Google loads up. The domain name (google.com) is just an alias that allows users to remember web addresses a lot easier.</p> <p>So when a user visits a domain name (such as google.com), the browser will query the DNS to retrieve the IP address that the domain is mapped to.</p> <p>Think of it like the phone book on your mobile. Instead of having to memorise Dave"s phone number, you can save his number in the phone. Then you can simply tap "phone Dave" and have your phone automatically look through its database and get his number for you. In this analogy, Dave is the domain name, his phone number is the IP address, and the phonebook is the DNS.</p> <p>Step 2: The Request
+Once the browser has retrieved the IP address from the DNS, it can then proceed to assemble a web request. This web request will contain a header, and can also sometimes contain content (such as form data when the user is submitting a form).</p> <p>The request header will include the following attributes:
+
+</p> <ul> <li><p>Request method - typically either GET or POST. Usually, the request method will be set to GET when simply retrieving information (such as viewing a web page), and POST when submitting a form, or sending data (for example when logging in, or creating a post)</p></li> <li><p>Request URL - this is a full URL which tells the web server which page the user is requesting</p></li> <li><pProtocol - this will contain the HTTP version (which is usually 1.1)
+</p></li> </ul> <p>When combined to make a web request, it"ll look something like this:</p> <p>GET /about.html HTTP/1.1
+</p> <p>Other information can then be added below that to provide other information about the request. These come in the form of key-value pairs, which means each piece of information will have a key (an identifier) and a value (the actual piece of information). Examples of this include information about the user agent (which contains information about the user"s browser), cookies, the content type, the host (which is the domain name in this context), and more. A full HTTP request will look something like this:
+</p> <p>GET /culture/anatomy-web-request HTTP/1.1[CRLF]
+Host: viacreative.co.uk[CRLF]
+Connection: close[CRLF]
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36
+Accept-Encoding: gzip[CRLF]
+Accept-Charset: ISO-8859-1,UTF-8;q=0.7,*;q=0.7[CRLF]
+Cache-Control: no-cache[CRLF]
+Accept-Language: de,en;q=0.7,en-us;q=0.3[CRLF]
+</p>

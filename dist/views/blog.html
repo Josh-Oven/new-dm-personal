@@ -1,0 +1,198 @@
+<section class='top-blog-hero'>
+
+  <div class='hero-inner-container'>
+
+    <div class='hero-header'>
+
+      <a ui-sref='home'><img class='header-logo' src='./assets/images/primary.jpg' /></a>
+
+      <ul class='nav-bar'>
+
+        <li><a class='nav-link' ui-sref='case-studies'>Case Studies</a></li>
+        <li><a class='nav-link' ui-sref='about'>About</a></li>
+        <li><a class='nav-link' ui-sref='process'>Process</a></li>
+        <li><a class='nav-link' ui-sref='services'>Services</a></li>
+        <li><a class='nav-link' ui-sref='blog'>Blog</a></li>
+        <li><a class='nav-link contact-link' ui-sref=''>Contact</a></li>
+
+      </ul>
+
+    </div>
+
+    <div class='hero-contents'>
+
+      <!-- <div class='inner-section-container'> -->
+
+        <h2 class='hero-title'>Blog</h2>
+
+        <div class='blog-filter-container'>
+
+          <input class='form-input' ng-model='search' placeholder='Search'></input>
+
+          <input class='form-input' placeholder='Filter'></input>
+
+        </div>
+
+        <p class='hero-text'>A space for us to share our studio culture, creative musings, tittle tattle, news and stories.</p>
+
+      <!-- </div> -->
+
+    </div>
+
+  </div>
+
+</section>
+
+<div class='slant-div hero-blog-div'></div>
+
+<section class='main-section blog-list-section'>
+
+  <div class='inner-section-container'>
+
+    <div class='blog-item' ng-repeat='data in newBlogData | filter: search'>
+
+      <div class='blog-image-container'>
+
+        <img ng-src='{{data.blogImageSmall}}' />
+
+      </div>
+
+      <a ui-sref='read({blogId: data.blogid})'><h2 class='section-title blog-title' >{{data.blogtitle}}</h2></a>
+
+      <h3 class='section-subtitle blog-author'>{{data.blogauthor}}</h3>
+
+    </div>
+
+  </div>
+
+</section>
+
+<div class='slant-div footer-slant'></div>
+
+<section class='main-section footer-section'>
+
+  <div class='inner-section-container footer-container'>
+
+    <div class='footer-contact-info'>
+
+      <div class='footer-phone-numbers'>
+
+        <h2 class='section-subtitle'>Contact Info</h2>
+
+        <div class='phone-number-container'>
+
+          <div class='phone-icon'>
+
+            <i class="fa fa-phone" aria-hidden="true"></i>
+
+          </div>
+
+          <div class='phone-text-container'>
+
+            <h3 class='location-name'>Middlesbrough</h3>
+
+            <h3 class='phone-number'>01642 247 111</h3>
+
+          </div>
+
+        </div>
+
+        <div class='phone-number-container'>
+
+          <div class='phone-icon'>
+
+            <i class="fa fa-phone" aria-hidden="true"></i>
+
+          </div>
+
+        <div class='phone-text-container'>
+
+          <h3 class='location-name'>Hull</h3>
+
+          <h3 class='phone-number'>01482 242 243</h3>
+
+        </div>
+
+        </div>
+
+      </div>
+
+      <div class='footer-contact-info-email'>
+
+        <h3 class='section-subtitle footer-email'>studio@viacreative.co.uk</h3>
+
+        <a class='contact-link' ui-sref=''>CONTACT</a>
+
+      </div>
+
+    </div>
+
+    <div class='footer-social-media'>
+
+      <h2 class='section-subtitle'>Social Media</h2>
+
+      <div class='footer-icon-container'>
+
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+
+        <i class="fa fa-dribbble" aria-hidden="true"></i>
+
+        <i class="fa fa-behance" aria-hidden="true"></i>
+
+        <i class="fa fa-github" aria-hidden="true"></i>
+
+      </div>
+
+    </div>
+
+    <div class='footer-address-info'>
+
+      <h2 class='section-subtitle'>Address</h2>
+
+      <div class='footer-address'>
+
+        <p class='section-text'>Cargo Fleet Offices</p>
+
+        <p class='section-text'>Middlesbrough Road</p>
+
+        <p class='section-text'>Middlesbrough</p>
+
+        <p class='section-text'>TS6 6XH</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class='legal-footer'>
+
+    <div class='bottom-left'>
+
+      <img src='./assets/images/footer/via-logo-footer.png' />
+
+      <a ui-sref=''>Terms & Conditions</a>
+
+      <a ui-sref=''>Privacy</a>
+
+      <a ui-sref=''>Cookies</a>
+
+    </div>
+
+    <div class='center-arrow'>
+
+    </div>
+
+    <div class='october-partner'>
+
+      <img src='./assets/images/footer/october.png' />
+
+    </div>
+
+  </div>
+
+</section>

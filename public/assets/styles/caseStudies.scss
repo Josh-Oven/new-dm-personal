@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+$light-border: #0687A8;
+$grey-font-color: #02C8C7;
+$footer-color: #092C64;
+
+.top-caseStudies-hero {
+  width: 100%;
+  // height: 1250px;
+  height: 120vh;
+  // border: 1px solid black;
+  background: url('./assets/images/case-studies-banner.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20vh;
+
+  @media(max-width: 600px){
+    // margin-bottom: 25vh;
+  }
+
+  @media(max-width: 520px){
+    // margin-bottom: vh;
+    padding-bottom: 30vh !important;
+  }
+
+  .hero-inner-container {
+    width: 96%;
+    height: 690px;
+    margin: auto;
+    padding-top: 25px;
+    // border: 1px solid blue;
+
+    .hero-header {
+      width: 100%;
+      height: 100px;
+      // border: 1px solid yellow;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .header-logo {
+        float: left;
+        width: 70px;
+        height: 70px;
+        // border: 1px solid blue;
+
+      }
+
+      .nav-bar {
+        width: 720px;
+        height: 60px;
+        // border: 1px solid orange;
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media(max-width: 700px){
+          display: none;
+        }
+
+        .nav-link {
+          font-family: 'Roboto', sans-serif;
+          color: white;
+          font-size: 17px;
+          margin-left: 7px;
+
+        }
+
+        .contact-link {
+          padding: 12px 25px 12px 25px;
+          border: 3px solid #0687A8;
+        }
+      }
+    }
+
+  .hero-contents {
+    width: 70%;
+    height: auto;
+    // border: 1px solid green;
+    margin: auto;
+    font-family: 'Exo 2';
+    color: white;
+    padding-top: 40px;
+
+    @media (max-width: 990px) {
+      width: 90%;
+    }
+
+    @media(max-width: 600px){
+      width: 100%;
+    }
+
+    .hero-subtitle {
+      // margin-top: 40px;
+      margin-bottom: 30px;
+    }
+
+    .hero-title {
+      font-size: 60px;
+      font-weight: bolder;
+      margin-bottom: 35px
+
+    }
+
+    .hero-text {
+      margin-left: 10px;
+      font-size: 18px;
+      padding-bottom: 50px;
+      line-height: 30px;
+      font-family: 'Roboto';
+      letter-spacing: .2px;
+
+    }
+
+    .hero-button {
+      float: right;
+      color: white;
+      font-family: 'Arial';
+
+      a {
+        padding: 17px 30px 17px 30px;
+        border: 3px solid #0687A8;
+        color: white;
+        margin-right: 15px;
+        font-weight: bold;
+      }
+    }
+
+  }
+
+  }
+}
+
+main {
+
+  .case-studies-thumb-section {
+    // margin-top: -200px;
+    margin-bottom: 7vh;
+
+    @media(max-width: 550px){
+      margin-bottom: 20vh;
+    }
+
+    .inner-section-container {
+      width: 100%;
+
+      .case-studies-container {
+        // height: auto;
+        // width: 100%;
+        // border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .case-study-shell {
+          height: 300px;
+          width: 33.33%;
+          // border: 1px solid blue;
+
+          @media(max-width: 950px){
+            width: 50%;
+          }
+
+          @media(max-width: 600px){
+            width: 100%;
+          }
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .case-contact {
+    background-color: white;
+    height: 58vh;
+    margin-top: 0px;
+    margin-bottom: 50vh;
+
+    .contact-section-container {
+      width: 90%;
+
+      .section-title {
+        font-family: 'Exo 2';
+        color: $grey-font-color;
+        // margin-left: -50px;
+        margin-bottom: 20px;
+
+
+      }
+
+      .section-text {
+        font-family: 'Roboto';
+        color: black;
+        margin-bottom: 40px;
+        margin-left: 0px;
+
+      }
+
+      .contact-input-container {
+        margin: auto;
+
+        .input-text {
+          color: black;
+          font-family: 'Roboto';
+          letter-spacing: .4px;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+
+}
+
+
+.bottom-blog-slant {
+  background-color: $footer-color;
+  margin-top: 500px;
+
+  .slider {
+    height: 100%;
+    width: 100%;
+    margin-left: -100%;
+    transform: skewX(6deg);
+    background: black;
+    z-index: 55;
+  }
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+.bottom-blog-slant:hover > .slider{
+  animation: slide 0.5s;
+  // transition: 1s;
+  // margin-left: 0;
+}

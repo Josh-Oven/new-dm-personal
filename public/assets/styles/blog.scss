@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$light-border: #0687A8;
+$grey-font-color: #02C8C7;
+$footer-color: #092C64;
+
+main {
+  background-color: white;
+}
+
+.top-blog-hero {
+  width: 100%;
+  // height: 1250px;
+  height: auto;
+  // border: 1px solid black;
+  background: url('./assets/images/blog-banner.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20vh;
+  z-index: -3;
+
+  @media(max-width: 830px){
+    margin-bottom: 30vh;
+  }
+
+  @media(max-width: 685px){
+    margin-bottom: 40vh;
+  }
+
+  .hero-inner-container {
+    width: 96%;
+    height: 690px;
+    margin: auto;
+    padding-top: 25px;
+    // border: 1px solid blue;
+
+    .hero-header {
+      width: 100%;
+      height: 100px;
+      // border: 1px solid yellow;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .header-logo {
+        float: left;
+        width: 70px;
+        height: 70px;
+        // border: 1px solid blue;
+
+      }
+
+      .nav-bar {
+        width: 720px;
+        height: 60px;
+        // border: 1px solid orange;
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media(max-width: 700px){
+          display: none;
+        }
+
+        .nav-link {
+          font-family: 'Roboto', sans-serif;
+          color: white;
+          font-size: 17px;
+          margin-left: 7px;
+
+        }
+
+        .contact-link {
+          padding: 12px 25px 12px 25px;
+          border: 3px solid #0687A8;
+        }
+      }
+    }
+
+  .hero-contents {
+    width: 96%;
+    height: auto;
+    // border: 1px solid green;
+    margin: auto;
+    font-family: 'Exo 2';
+    color: white;
+    padding-top: 40px;
+
+    // @media (max-width: 1280px) {
+    //   width: 70%;
+    // }
+
+    .hero-subtitle {
+      // margin-top: 40px;
+      margin-bottom: 30px;
+    }
+
+    .hero-title {
+      font-size: 60px;
+      font-weight: bolder;
+      margin-bottom: 35px
+
+    }
+
+    .blog-filter-container {
+      width: 630px;
+      height: 55px;
+      margin-top: -75px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      float: right;
+      // border: 1px solid black;
+
+      @media(max-width: 830px){
+        margin-top: 0px;
+      }
+
+      @media(max-width: 685px){
+        width: 100%;
+        height: 110px;
+        margin-bottom: 30px;
+      }
+
+      .form-input {
+        width: 290px;
+        height: 50px;
+        border: none;
+        border-bottom: 2px #A0D8D9 solid;
+        background: rgba(1, 54, 54, 0);
+        outline: none;
+      //   margin-right: 10%;
+      }
+
+      .form-input::placeholder {
+        font-size: 17px;
+        color: white;
+      }
+    }
+
+    .hero-text {
+      margin-left: 10px;
+      font-size: 18px;
+      padding-bottom: 50px;
+      line-height: 30px;
+      font-family: 'Roboto';
+      letter-spacing: .2px;
+
+      @media(max-width: 830px){
+        margin-top: 100px;
+      }
+
+    }
+
+    .hero-button {
+      float: right;
+      color: white;
+      font-family: 'Arial';
+
+      a {
+        padding: 17px 30px 17px 30px;
+        border: 3px solid #0687A8;
+        color: white;
+        margin-right: 15px;
+        font-weight: bold;
+      }
+    }
+
+  }
+
+  }
+}
+
+.hero-blog-div {
+  margin-top: -290px;
+  z-index: 0;
+}
+
+.blog-list-section {
+  background: rgba(0, 0, 0, 0);
+  margin-top: -410px;
+  // margin-bottom: 100%;
+  // border: 1px solid black;
+  z-index: 18;
+  position: relative;
+
+  .inner-section-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .blog-item {
+      width: 360px;
+      height: auto;
+      padding-bottom: 50px;
+      // border: 1px solid blue;
+
+
+      .blog-image-container {
+        width: 100%;
+        height: 340px;
+        margin-bottom: 30px;
+        overflow: hidden;
+        object-fit: cover;
+
+        img {
+          width: 100%;
+          height: 100%;
+      }
+    }
+
+      .blog-title {
+        font-size: 35px;
+        margin-bottom: 25px;
+        font-family: 'Exo 2';
+      }
+
+      .blog-author {
+        font-family: 'Roboto';
+        font-weight: lighter;
+        color: #011D72;
+      }
+    }
+  }
+}

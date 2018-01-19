@@ -1,0 +1,102 @@
+[
+
+{
+  "blog": {
+    "id": 1,
+    "title": "The great email bake off",
+    "author": "Ray Shephardson",
+    "image": "./assets/images/blog/bakeoff/download-1.jpg",
+    "imageLarge": "./assets/images/blog/bakeoff/download.jpg",
+    "teaserText": "Creating an effective email campaign is very much like baking a cake. If you have the right ingredients and add the correct amount of each of them, you will get the perfect result."
+  }
+},
+
+{
+  "blog": {
+    "id": 2,
+    "title": "Reinventing the menu icon",
+    "author": "Simon Ward",
+    "image": "./assets/images/blog/menu-icon/download-1.jpg",
+    "imageLarge": "./assets/images/blog/menu-icon/download.jpg",
+    "teaserText": "With the launch of the new VIA website (finally), one aspect of the design that received an unusual amount of attention was the mobile menu and it’s interface. A relatively simple idea that I’ve had in the deep recesses of my mind for several years now, stemmed from years of using two conflicting UI."
+  }
+},
+
+{
+  "blog": {
+    "id": 3,
+    "title": "Music and its creative powers",
+    "author": "Lee Woolams",
+    "image": "./assets/images/blog/music/download-1.jpg",
+    "imageLarge": "./assets/images/blog/music/download.jpg",
+    "teaserText": ""
+  }
+},
+
+{
+  "blog": {
+    "id": 4,
+    "title": "The Anatomy of a Web Request",
+    "author": "Terry Harvey",
+    "image": "./assets/images/blog/anatomy/download-1.png",
+    "imageLarge": "",
+    "teaserText": ""
+  }
+},
+
+{
+  "blog": {
+    "id": 5,
+    "title": "Why You Need to Think About Reinvigorating Your Website",
+    "author": "Ray Shephardson",
+    "image": "./assets/images/blog/invigorating/download-1.jpg",
+    "imageLarge": "",
+    "teaserText": ""
+  }
+},
+
+{
+  "blog": {
+    "id": 6,
+    "title": "The Next Version of Javascript",
+    "author": "Terry Harvey",
+    "image": "./assets/images/blog/new-js/download.jpg",
+    "imageLarge": "",
+    "teaserText": ""
+  }
+},
+
+{
+  "blog": {
+    "id": 7,
+    "title": "The Importance of Flexible Working",
+    "author": "Terry Harvey",
+    "image": "./assets/images/blog/flexible-working/download.jpg",
+    "imageLarge": "",
+    "teaserText": ""
+  }
+},
+
+{
+  "blog": {
+    "id": 8,
+    "title": "IE8: Time to Break Up?",
+    "author": "VIA Creative",
+    "image": "./assets/images/blog/ie8/download.png",
+    "imageLarge": "",
+    "teaserText": ""
+  }
+},
+
+{
+  "blog": {
+    "id": 9,
+    "title": "Introducing the VIA Manifesto",
+    "author": "Dave Ramrekha",
+    "image": "./assets/images/blog/introducing-via/download.jpg",
+    "imageLarge": "",
+    "teaserText": ""
+  }
+}
+
+]

@@ -1,0 +1,59 @@
+[
+
+  {
+    "case": {
+      "title": "UCS Technologies",
+      "desc": "Branding, web design and marketing",
+      "image": "./assets/images/case/ucs.jpg"
+    }
+  },
+
+  {
+    "case": {
+      "title": "Hartlepool Borough Council",
+      "desc": "Web design and development",
+      "image": "./assets/images/case/hbc.jpg"
+    }
+  },
+
+  {
+    "case": {
+      "title": "DTA group",
+      "desc": "Branding and web design",
+      "image": "./assets/images/case/dta.jpg"
+    }
+  },
+
+  {
+    "case": {
+      "title": "Enpack",
+      "desc": "Bespoke responsive web design",
+      "image": "./assets/images/case/enpack.jpg"
+    }
+  },
+
+  {
+    "case": {
+      "title": "Midas Cladding",
+      "desc": "Branding, strategy, marketing collateral, print and web design",
+      "image": "./assets/images/case/midas.jpg"
+    }
+  },
+
+  {
+    "case": {
+      "title": "Palace Hub",
+      "desc": "Naming, branding and marketing",
+      "image": "./assets/images/case/palace-hub.jpg"
+    }
+  },
+
+  {
+    "case": {
+      "title": "Typhoon International",
+      "desc": "Marketing collateral desing, printing and web desing",
+      "image": "./assets/images/case/typhoon.jpg"
+    }
+  }
+
+]
